@@ -1,0 +1,82 @@
+.employee-form {
+  border-radius: 25px;
+  background-color: #cadfef;
+  width: 40%;
+  max-width: 1000px;
+  min-width: 300px;
+  text-align: center;
+}
+
+.employee-form form {
+  text-align: center;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.employee-form .label-input{
+    width:40%;
+}
+
+.employee-form input,
+.employee-form select {
+  text-align: center;
+  color: #2d2327;
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  border: solid 2px #320A28;
+  margin: 0 auto;
+}
+
+.employee-form label {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: #320A28;
+}
+
+.employee-form .address {
+    display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  border-radius: 25px;
+  background-color: #e99760;
+  margin: 20px auto;
+  border: none;
+}
+.employee-form .address h3{
+  display: block;
+  width: 100%;
+  margin:10px 0 0;
+  font-size: 25px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #320A28;
+}
+.employee-form .address label {
+  color: white;
+}
+.employee-form .address input,
+.employee-form .address select {
+  border: solid 2px #320A28;
+}
+
+.employee-form .button {
+    font-weight: 700;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 10px;
+  margin: 20px auto;
+  background-color: #320A28;
+  color:white;
+  padding: 7px 35px;
+  border: solid 2px #320A28;
+}
+
+.employee-form .button:hover{
+    color:#320A28; 
+    background-color: white;
+    border: solid 2px #320A28;
+}
+
