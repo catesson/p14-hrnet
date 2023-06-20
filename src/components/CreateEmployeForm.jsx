@@ -17,8 +17,6 @@ export function CreateEmployeFrom() {
     const street = document.getElementById("street");
     const city = document.getElementById("city");
     const state = document.getElementById("state");
-
-    console.log(state)
     const zipCode = document.getElementById("zip-code");
 
     const employees = JSON.parse(localStorage.getItem("employees")) || [];
@@ -33,7 +31,6 @@ export function CreateEmployeFrom() {
       state: state.value,
       zipCode: zipCode.value,
     };
-    console.log(employee);
     employees.push(employee);
 
     localStorage.setItem("employees", JSON.stringify(employees));
@@ -83,13 +80,7 @@ export function CreateEmployeFrom() {
         </fieldset>
         <div>
           <label htmlFor="department">Department</label>
-          <select name="department" id="department">
-            <option>Sales</option>
-            <option>Marketing</option>
-            <option>Engineering</option>
-            <option>Human Resources</option>
-            <option>Legal</option>
-          </select>
+          <DropDown option={[{"name" : "Sales"}, {"name" :"Marketing"}, {"name" :"Engineering"}, {"name" :"Human Ressources"}, {"name" :"Legale"}]} optionValue="name" defaultValue="Sales" id="Department"  colorClass="red-style"/>
         </div>
       </form>
       <button className="button" onClick={handleClickFormButton}>
