@@ -46,7 +46,7 @@ const header = renderHeader();
         value={data}
         paginator
         rows={3}
-        rowsPerPageOptions={[1, 2, 3, 25, 50, 100]}
+        rowsPerPageOptions={[5, 10, 15, 25, 50, 100]}
         tableStyle={{ minWidth: "50rem" }}
         header={header}
         filters={filters}

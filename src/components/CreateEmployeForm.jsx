@@ -80,7 +80,7 @@ export function CreateEmployeFrom() {
         </fieldset>
         <div>
           <label htmlFor="department">Department</label>
-          <DropDown option={[{"name" : "Sales"}, {"name" :"Marketing"}, {"name" :"Engineering"}, {"name" :"Human Ressources"}, {"name" :"Legale"}]} optionValue="name" defaultValue="Sales" id="Department"  colorClass="red-style"/>
+          <DropDown option={[{"name" : "Sales"}, {"name" :"Marketing"}, {"name" :"Engineering"}, {"name" :"Human Ressources"}, {"name" :"Legale"}]} optionValue="name" defaultValue="Sales" id="department"  colorClass="red-style"/>
         </div>
       </form>
       <button className="button" onClick={handleClickFormButton}>
